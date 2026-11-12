@@ -1,0 +1,16 @@
+Source: sleepi4-monitor
+Section: misc
+Priority: optional
+Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
+Uploaders: Masahiro Honda <honda@mechatrax.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.2
+Vcs-Git: https://github.com/mechatrax/sleepi4-monitor.git
+Vcs-browser: https://github.com/mechatrax/sleepi4-monitor
+Homepage: https://mechatrax.com/
+
+Package: sleepi4-monitor
+Architecture: all
+Depends: ${misc:Depends}, sleepi4-utils, python3-sleepi (>= 1.2.0), python3-yaml, python3, systemd
+Description: Monitoring daemon for slee-Pi 4
+ This package contains the daemon to monitor slee-Pi 4.

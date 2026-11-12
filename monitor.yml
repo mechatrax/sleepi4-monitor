@@ -1,0 +1,66 @@
+common:
+  interval: 1
+
+extin1:
+  history_size: 1
+  commands:
+    - exec: /etc/sleepi4-monitor/extin-1.d/
+      condition: over
+      threshold: 3
+      oneshot: true
+
+extin2:
+  history_size: 1
+  commands:
+    - exec: /etc/sleepi4-monitor/extin-2.d/
+      condition: over
+      threshold: 3
+      oneshot: true
+
+pushsw:
+  history_size: 1
+  commands:
+    - exec: /etc/sleepi4-monitor/pushsw.d/
+      condition: over
+      threshold: 3
+      oneshot: true
+
+voltage1:
+  history_size: 3
+  commands:
+    - exec: /etc/sleepi4-monitor/voltage-1.d/
+      condition: under
+      threshold: 0
+      oneshot: true
+
+voltage2:
+  history_size: 3
+  commands:
+    - exec: /etc/sleepi4-monitor/voltage-2.d/
+      condition: under
+      threshold: 0
+      oneshot: true
+
+current:
+  history_size: 3
+  commands:
+    - exec: /etc/sleepi4-monitor/current.d/
+      condition: none
+      threshold: 0
+      oneshot: true
+
+power:
+  history_size: 3
+  commands:
+    - exec: /etc/sleepi4-monitor/power.d/
+      condition: none
+      threshold: 0
+      oneshot: true
+
+energy:
+  history_size: 1
+  commands:
+    - exec: /etc/sleepi4-monitor/energy.d/
+      condition: none
+      threshold: 0
+      oneshot: true

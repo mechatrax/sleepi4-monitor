@@ -1,0 +1,8 @@
+/etc/sleepi4-monitor/extin-1.d/
+/etc/sleepi4-monitor/extin-2.d/
+/etc/sleepi4-monitor/pushsw.d/
+/etc/sleepi4-monitor/voltage-1.d/
+/etc/sleepi4-monitor/voltage-2.d/
+/etc/sleepi4-monitor/current.d/
+/etc/sleepi4-monitor/power.d/
+/etc/sleepi4-monitor/energy.d/

@@ -1,0 +1,4 @@
+sleepi4mon /usr/sbin/
+parse_env.sh /usr/lib/sleepi4-monitor/
+monitor.yml /etc/sleepi4-monitor/
+examples/99-shutdown.sh /etc/sleepi4-monitor/pushsw.d/
